@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividades JavaScript</title>
+        <script>
+
+            let lista1 = [3, 2, 5, 1, 7, 8, 15, 11, 12, 13, 4, 9, 20, 16, 21, 18, 17, 26, 23, 29]
+            let pares = []
+            let impares = []
+            for(lista in lista1){
+                if(lista1[lista] % 2 == 0){
+                    pares.push(lista1[lista])}
+                else{
+                    impares.push(lista1[lista])
+                }
+            }
+            alert('lista: ' + lista1)
+            alert('Pares: ' + pares)
+            alert('Ímpares: ' + impares)
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
