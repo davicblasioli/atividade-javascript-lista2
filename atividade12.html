@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividades 11</title>
+        <script>
+
+            let soma = 0
+            let media = 0
+            let menor = 0
+            let idades = []
+            let tamanhos = []
+
+            for(let i = 0; i < 30; i++){
+                let idade = parseInt(prompt('Qual sua idade?'))
+                idades.push(idade)  
+                let altura = parseFloat(prompt('Qual sua altura?'))
+                tamanhos.push(altura) 
+                soma = soma + altura
+            }
+
+            media = soma / 30
+
+            for(let i = 0; i < idades.length; i++){
+                if(idades[i] > 13 && tamanhos[i] < media){
+                    menor = menor + 1  
+                }
+            }
+
+            alert(menor)
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

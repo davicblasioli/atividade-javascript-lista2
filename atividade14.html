@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividades 14</title>
+        <script>
+
+            let lista1 = ["Telefonou para a vítima?", "Esteve no local do crime?", "Mora perto da vítima?", "Devia para a vítima?", "Já trabalhou com a vítima?"]
+            let positivos = 0
+            for(lista in lista1){
+                let resposta = prompt(lista1[lista])
+                if(resposta.toLocaleLowerCase() === 'sim'){
+                positivos = positivos + 1
+                }
+            }
+            if(positivos < 2){
+                alert('Inocente')
+            }
+            else if(positivos === 2){
+                alert('Suspeito')
+            }
+            else if(positivos === 5){
+                alert('Assassino')
+            }
+            else{
+                alert('Cúmplice')
+            }
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

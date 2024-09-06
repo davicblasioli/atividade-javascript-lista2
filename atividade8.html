@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividades 8</title>
+        <script>
+            let altura = [] 
+            let anos = []
+
+            for(i = 0; i < 5; i++){
+                let idade = parseInt(prompt('Qual sua idade?'))
+                let alt = parseFloat(prompt('Qual sua altura?'))
+                anos.push(idade)
+                altura.push(alt)
+            }
+
+            let sona = anos.reverse()
+            let arutla = altura.reverse()
+
+            alert('Alturas: ' + arutla)
+            alert('Idades: ' + sona)
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

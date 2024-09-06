@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Dado</title>
+
+    <script>
+        let um = 0
+        let dois = 0
+        let tres = 0
+        let quatro = 0
+        let cinco = 0
+        let seis = 0
+
+        for(let i = 0; i < 100; i++){
+            function lancarDado() {
+                return Math.floor(Math.random() * 6) + 1;
+            }
+            if (lancarDado() == 1){
+                um = um + 1
+            }
+            else if(lancarDado() == 2){
+                dois = dois + 1
+            }
+            else if(lancarDado() == 3){
+                tres = tres + 1
+            }
+            else if(lancarDado() == 4){
+                quatro = quatro + 1
+            }
+            else if(lancarDado() == 5){
+                cinco = cinco + 1
+            }
+            else{
+                seis = seis + 1
+            }
+        }
+        alert('O número 1 caiu: ' + um + ' vezes')
+        alert('O número 2 caiu: ' + dois + ' vezes')
+        alert('O número 3 caiu: ' + tres + ' vezes')
+        alert('O número 4 caiu: ' + quatro + ' vezes')
+        alert('O número 5 caiu: ' + cinco + ' vezes')
+        alert('O número 6 caiu: ' + seis + ' vezes')
+    </script>
+</head>
+<body>
+
+</body>
+</html>
